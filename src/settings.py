@@ -11,7 +11,7 @@ PROJECT_NAME_FULL: str = "Road Pothole Images"
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.None()
+LICENSE: License = License.CC0_1_0()
 INDUSTRIES: List[Industry] = [Industry.GeneralDomain()]
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
@@ -20,7 +20,7 @@ RELEASE_YEAR: int = 2020
 HOMEPAGE_URL: str = "https://www.kaggle.com/datasets/sovitrath/road-pothole-images-for-pothole-detection"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 1612495
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/road-pothole-images"
