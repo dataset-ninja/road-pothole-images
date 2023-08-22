@@ -1,6 +1,6 @@
-Dataset **Road Pothole Images** can be downloaded in Supervisely format:
+Dataset **Road Pothole Images** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/8/h/7u/UtiEpsAvjJiRpIPrOye6EWNplDeOPUZ70im7VwWHAYcnr24Q5EPHsfEK1o0NB9Wnb9HkY8bbdTjP5ZLzYVP1V1xcVfbOW3sZPQxQwzc4yTiqmK0A1UhLf6vBzzwD.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/n/I/ld/YJcqWVh6qyoovTzC7FHiUGIC6PJR7LQpXUZekYa00oS3BL2CK3hVAV8Y28yLMSaj2sVrLFGSobcW07OhxV7Y17sxWlNNIaWG2oN8agx9786w1fIMR8CAbqIQd8Dj.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
@@ -11,6 +11,8 @@ pip install --upgrade dataset-tools
 ``` python
 import dataset_tools as dtools
 
-dtools.download(dataset='Road Pothole Images', dst_path='~/dtools/datasets/Road Pothole Images.tar')
+dtools.download(dataset='Road Pothole Images', dst_dir='~/dataset-ninja/')
 ```
-The data in original format can be 🔗[downloaded here](https://www.kaggle.com/datasets/sovitrath/road-pothole-images-for-pothole-detection/download?datasetVersionNumber=2)
+Make sure not to overlook the [python code example](https://developer.supervisely.com/getting-started/python-sdk-tutorials/iterate-over-a-local-project) available on the Supervisely Developer Portal. It will give you a clear idea of how to effortlessly work with the downloaded dataset.
+
+The data in original format can be [downloaded here](https://drive.google.com/drive/folders/1vUmCvdW3-2lMrhsMbXdMWeLcEz__Ocuy).
