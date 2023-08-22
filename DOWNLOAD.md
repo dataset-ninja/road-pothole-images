@@ -1,6 +1,6 @@
 Dataset **Road Pothole Images** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/n/I/ld/YJcqWVh6qyoovTzC7FHiUGIC6PJR7LQpXUZekYa00oS3BL2CK3hVAV8Y28yLMSaj2sVrLFGSobcW07OhxV7Y17sxWlNNIaWG2oN8agx9786w1fIMR8CAbqIQd8Dj.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/G/s/zx/rnRveIEYOSl3Za4XjVIrLOmUKCHlPnFxIFYvXcIQfKizq7KDVVuzOUij3V2DpuqwnzL2b7OkV75d6RcScvXbpV3JywWnID2Ku6bHKRz7TADVDcS2hL2hIXXryiwq.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
