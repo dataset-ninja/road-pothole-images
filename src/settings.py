@@ -22,7 +22,7 @@ HIDE_DATASET = False  # set False when 100% sure about repo quality
 ##################################
 LICENSE: License = License.CC0_1_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [
-    Industry.Automotive(is_used=False),
+    Industry.Automotive(),
     Research.Engineering(),
 ]
 CATEGORY: Category = Category.SelfDriving()
