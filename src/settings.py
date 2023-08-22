@@ -14,7 +14,8 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "Road Pothole Images"
-PROJECT_NAME_FULL: str = "Road Pothole Images for Pothole detection"
+PROJECT_NAME_FULL: str = "Road Pothole Images for Pothole Detection"
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
@@ -33,12 +34,10 @@ RELEASE_DATE: Optional[str] = "2018-04-02"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = (
-    "https://www.kaggle.com/datasets/sovitrath/road-pothole-images-for-pothole-detection"
-)
+HOMEPAGE_URL: str = "https://drive.google.com/drive/folders/1vUmCvdW3-2lMrhsMbXdMWeLcEz__Ocuy"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 1612495
+PREVIEW_IMAGE_ID: int = None
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/road-pothole-images"
@@ -49,7 +48,7 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/road-pothole-images"
 ##################################
 DOWNLOAD_ORIGINAL_URL: Optional[
     Union[str, dict]
-] = "https://www.kaggle.com/datasets/sovitrath/road-pothole-images-for-pothole-detection/download?datasetVersionNumber=2"
+] = "https://drive.google.com/drive/folders/1vUmCvdW3-2lMrhsMbXdMWeLcEz__Ocuy"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -60,12 +59,15 @@ PAPER: Optional[Union[str, List[str]]] = [
     "https://ieeexplore.ieee.org/abstract/document/7376642",
 ]
 CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = ["S. Nienaber", "R.S. Kroon", "M.J. Booysen", "Sovit Ranjan Rath"]
+AUTHORS: Optional[List[str]] = ["S. Nienaber", "R.S. Kroon", "M.J. Booysen"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Stellenbosch University, South Africa"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "http://www.sun.ac.za/english"
 
-SLYTAGSPLIT: Optional[Dict[str, List[str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, List[str]]] = {
+    "training subsets": ["positive data", "negative data"],
+    "__POSTTEXT__": "Additionaly, the ***pothole numbers*** data is available",
+}
 TAGS: List[str] = None
 
 ##################################
@@ -87,6 +89,7 @@ def get_settings():
     settings = {
         "project_name": PROJECT_NAME,
         "license": LICENSE,
+        "hide_dataset": HIDE_DATASET,
         "applications": APPLICATIONS,
         "category": CATEGORY,
         "cv_tasks": CV_TASKS,

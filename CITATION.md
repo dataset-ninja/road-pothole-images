@@ -1,12 +1,9 @@
 If you make use of the Road Pothole Images data, please cite the following reference:
 
-``` bibtex 
-@dataset{Road Pothole Images,
-	author={S. Nienaber and R.S. Kroon and M.J. Booysen and Sovit Ranjan Rath},
-	title={Road Pothole Images for Pothole detection},
-	year={2018},
-	url={https://www.kaggle.com/datasets/sovitrath/road-pothole-images-for-pothole-detection}
-}
+```apa
+S. Nienaber, M.J. Booysen, R.S. Kroon, “Detecting potholes using simple image processing techniques and real-world footage”, SATC, July 2015, Pretoria, South Africa.
+
+S. Nienaber, R.S. Kroon, M.J. Booysen , “A Comparison of Low-Cost Monocular Vision Techniques for Pothole Distance Estimation”, IEEE CIVTS, December 2015, Cape Town, South Africa.
 ```
 
-[🔗 Source](https://www.kaggle.com/datasets/sovitrath/road-pothole-images-for-pothole-detection)
+[Source](https://www.kaggle.com/datasets/sovitrath/road-pothole-images-for-pothole-detection)
