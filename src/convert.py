@@ -132,7 +132,7 @@ def convert_and_upload_supervisely_project(
         # ds_tag = sly.Tag(tag_ds, value=ds_tag_value)/
         # tags.append(ds_tag)
         # tag_names_.append(ds_tag_value)
-        if ds_name == "train":
+        if "train" in ds_name:
             if "Negative" in image_path:
                 tag_names_.append("negative data")
             elif "Positive" in image_path:
@@ -151,8 +151,8 @@ def convert_and_upload_supervisely_project(
     #     possible_values=["Negative data", "Positive data"],
     # )
     tag_names = [
-        "Negative data",
-        "Positive data",
+        "negative data",
+        "positive data",
         # "Dataset 1 (Simplex)",
         # "Dataset 2 (Complex)",
     ]
@@ -206,10 +206,12 @@ def convert_and_upload_supervisely_project(
                 for image_path in img_pathes_batch:
                     im_name = get_file_name_with_ext(image_path)
                     if "Negative" in image_path:
-                        im_name = "Negative_" + im_name
+                        im_name = "negative_" + im_name
                     elif "Positive" in image_path:
-                        im_name = "Positive_" + im_name
-                    img_names_batch.append(sub_ds + "_" + im_name)
+                        im_name = "positive_" + im_name
+                    img_names_batch.append(im_name)
+
+                # img_names_batch = [ f"{path.split('/')[-2]}_{get_file_name_with_ext(path)}" for path in img_pathes_batch]
 
                 img_infos = api.image.upload_paths(dataset.id, img_names_batch, img_pathes_batch)
                 img_ids = [im_info.id for im_info in img_infos]
