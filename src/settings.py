@@ -65,7 +65,7 @@ ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Stellenbosch University, S
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "http://www.sun.ac.za/english"
 
 SLYTAGSPLIT: Optional[Dict[str, List[str]]] = {
-    "training subsets": ["positive data", "negative data"],
+    "subsets reflecting bbox availability": ["positive data", "negative data"],
     "__POSTTEXT__": "Additionaly, the ***pothole numbers*** data is available",
 }
 TAGS: List[str] = None
