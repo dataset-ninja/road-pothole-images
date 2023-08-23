@@ -70,6 +70,7 @@ SLYTAGSPLIT: Optional[Dict[str, List[str]]] = {
 }
 TAGS: List[str] = None
 
+SECTION_EXPLORE_CUSTOM_DATASETS: Optional[List[str]] = ["ds1_simplex-test"]
 ##################################
 ###### ? Checks. Do not edit #####
 ##################################
@@ -115,4 +116,5 @@ def get_settings():
     settings["slytagsplit"] = SLYTAGSPLIT
     settings["tags"] = TAGS
 
+    settings["explore_datasets"] = SECTION_EXPLORE_CUSTOM_DATASETS    
     return settings
