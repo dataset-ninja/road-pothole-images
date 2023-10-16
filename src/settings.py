@@ -58,6 +58,9 @@ PAPER: Optional[Union[str, List[str]]] = [
     "https://scholar.sun.ac.za/handle/10019.1/97191",
     "https://ieeexplore.ieee.org/abstract/document/7376642",
 ]
+BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {'Kaggle':"https://www.kaggle.com/datasets/sovitrath/road-pothole-images-for-pothole-detection"}
+
 CITATION_URL: Optional[str] = None
 AUTHORS: Optional[List[str]] = ["S. Nienaber", "R.S. Kroon", "M.J. Booysen"]
 
@@ -109,6 +112,8 @@ def get_settings():
     settings["download_original_url"] = DOWNLOAD_ORIGINAL_URL
     settings["class2color"] = CLASS2COLOR
     settings["paper"] = PAPER
+    settings["blog"] = BLOGPOST
+    settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
     settings["organization_name"] = ORGANIZATION_NAME
