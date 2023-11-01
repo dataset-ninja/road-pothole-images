@@ -63,6 +63,7 @@ REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {'Kaggle':"https:/
 
 CITATION_URL: Optional[str] = None
 AUTHORS: Optional[List[str]] = ["S. Nienaber", "R.S. Kroon", "M.J. Booysen"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["mjbooysen@sun.ac.za", "kroon@sun.ac.za"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Stellenbosch University, South Africa"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "http://www.sun.ac.za/english"
@@ -116,6 +117,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
