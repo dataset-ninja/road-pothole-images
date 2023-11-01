@@ -1,6 +1,4 @@
-The entire **Road Potholes Images** dataset consists of two different sets, one was considered to be simple and the other more complex. These datasets do share some files and there are a few instances where two different images would have the same name. Therefore, the appropriate measures need to be taken if the data is combined into one larger dataset.
-
-Each of the training datasets dived into positive and negative images as well as a set of positive test images.
+The complete **Road Potholes Images** dataset comprises two distinct sets, one categorized as relatively simple and the other as more intricate. Some files are common between these datasets, and there are instances where two distinct images share the same name. Consequently, if one intends to merge these datasets into a larger one, it's crucial to implement appropriate precautions. Each of the training datasets is further divided into positive and negative images, along with a set of positive test images.
 
 The authors of the dataset address the issue of potholes, particularly in developing regions, which can lead to vehicle damage and risks to drivers. They propose a novel approach employing vehicle-based computer vision to detect potholes using a camera mounted on the window. Unlike previous methods that often use theoretical models or footage from specific vantage points at low speeds, the authors emphasize real-time detection from within a moving vehicle.
 
