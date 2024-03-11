@@ -2,6 +2,6 @@
 
 The dataset consists of 11497 images with 7588 labeled objects belonging to 1 single class (*pothole*).
 
-Images in the Road Pothole Images dataset have bounding box annotations. There are 8552 (74% of the total) unlabeled images (i.e. without annotations). There are 4 splits in the dataset: *ds2_complex-train* (7490 images), *ds1_simplex-train* (3126 images), *ds2_complex-test* (604 images), and *ds1_simplex-test* (277 images). Alternatively, the dataset could be split into 2 subsets reflecting bbox availability: ***negative data*** (8608 images) and ***positive data*** (2008 images). Additionaly, the ***pothole numbers*** data is available. The dataset was released in 2018 by the Stellenbosch University, South Africa.
+Images in the Road Pothole Images dataset have bounding box annotations. There are 8552 (74% of the total) unlabeled images (i.e. without annotations). There are 4 splits in the dataset: *ds2_complex-train* (7490 images), *ds1_simplex-train* (3126 images), *ds2_complex-test* (604 images), and *ds1_simplex-test* (277 images). Alternatively, the dataset could be split into 2 subsets reflecting bbox availability: ***negative data*** (8608 images) and ***positive data*** (2008 images). Additionaly, the ***pothole numbers*** data is available. The dataset was released in 2018 by the <span style="font-weight: 600; color: grey; border-bottom: 1px dashed #d3d3d3;">Stellenbosch University, South Africa</span>.
 
 <img src="https://github.com/dataset-ninja/road-pothole-images/raw/main/visualizations/poster.png">
